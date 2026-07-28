@@ -5,12 +5,14 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+import jcf.AppRole;
+
 /**
  * Define los privilegios mínimos necesarios para renderizar o ingresar a una vista o página completa.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})
 public @interface PageWidgetAllow {
-    String[] role() default {};
+    AppRole[] role() default {};
     String department() default "";
 }
