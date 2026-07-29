@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-public @interface ModelToRecordConversor {
+public @interface FluxModelToRecordConversor {
     /**
      * El nombre de la clase Record destino. Si no se especifica,
      * se asume el mismo nombre del modelo eliminando "Model.java".
